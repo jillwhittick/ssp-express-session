@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
     // ok I have a session but it doesn't have the property 'testMessage' because
     // it is a new session
     console.log("Session is new");
-    req.session.testMessage = "If you see this then you have a working session object";
+    req.session.testMessage = "If you see this then you have a working session object :)";
   } else {
 
     req.session.testMessage = "This is an old session";
